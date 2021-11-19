@@ -1,5 +1,22 @@
 Создали Репозиторий с файлом "TestMergeConflict.txt"
-Клонировали Репозиторий изменили файл  "TestMergeConflict.txt"
+Клонировали Репозиторий, изменили файл  "TestMergeConflict.txt"
 Скомитили и запушили на ХАБ
+
+Открыли на ХАБе файл  "TestMergeConflict.txt", отредактировали и закрыли.
+Ошибок пока небыло ))
+
 Не обновляя Сервер(git pull) открыли и изменили файл  "TestMergeConflict.txt" Локально
 Скомитили и попытались запушить на ХАБ
+
+получили ошибку
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'git@github.com:Migeya/RepoNameAndriyForMergeConflict.git'
+
+попытался сделать git pull получил 
+CONFLICT (content): Merge conflict in TestMergeConflict.txt
+Automatic merge failed; fix conflicts and then commit the resul
+
+Открыл Локально файл  "TestMergeConflict.txt" и вручную отредактировал конфликты 
+Сохранил изменения
+
+Выполнил команду git add -> git commit -am ->git push
